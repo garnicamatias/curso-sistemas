@@ -1,0 +1,23 @@
+Hola Mati! Muy bien tu trabajo.
+
+Para esta actividad no importaba si el display/botón de borrar. quedaba dentro o fuera de la tabla.
+Pero te comento como es para incluirlo dentro.
+
+<table>
+  <tr>
+    <td colspan="4">
+      <input ...></input>
+    </td>
+  </tr>
+  
+
+  .. grilla de botones ...
+
+  <tr>
+    <td colspan="4">
+      <button style="width:100%"></button>
+    </td>
+  </tr>
+</table>
+
+¡Saludos!
