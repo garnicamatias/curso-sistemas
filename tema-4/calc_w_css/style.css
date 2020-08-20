@@ -1,0 +1,125 @@
+.table2
+{
+	border: 3px solid black;
+	border-radius: 10px; 
+	border-style: dashed;
+	width: 11%;
+
+}
+
+.font-title
+{
+	color:black;
+	font-size:35px;
+	font-weight:bold;
+
+}
+
+
+.font-button
+{
+	color:white;
+	font-size:70%;
+	font-weight:bold;
+}
+
+.font-input
+{
+	color:black;
+	font-size:30px; 
+	text-align: right;
+}
+
+
+.style-input
+{
+	width: 93%;
+	height: 45px;
+
+	border-radius: 4px;
+	border-top-color: lightgrey;
+	border-top-width: 3px;
+	border-left-color: lightgrey;
+	border-left-width: 3px;
+}
+
+.blue-button:hover
+{
+	background-color: blue;
+}
+
+.blue-button
+{
+	background-color: rgb(71,120,223);	
+
+	width: 32px;
+	height: 32px;
+	align-self: right;
+
+	border-radius: 5px;
+	border-color:blue;
+	border-style: none;
+
+	box-shadow: 0px 5px rgb(77,89,149);
+}
+
+.red-button:hover
+{
+	background-color: red;
+}
+
+
+.red-button
+{
+	background-color:rgb(214,56,21);
+	
+	width: 97%;
+	height: 32px;
+
+	border-radius: 5px;
+	border-color:red;	
+	border-style: none;
+
+	box-shadow: 0px 5px rgb(210,0,0);
+}
+
+
+.green-button:hover
+{
+	background-color: green;
+}
+
+.green-button
+{
+	background-color:rgb(124,216,55);
+
+	width: 32px;
+	height: 32px;
+
+	border-radius: 5px;
+	border-color:rgb(109,211,51);	
+	border-style: none;
+
+	box-shadow: 0px 5px rgb(87,176,38);
+
+	align-items: right;
+}
+
+.yellow-button:hover
+{
+	background-color: yellow;
+}
+
+.yellow-button
+{
+	background-color:rgb(254,176,42);
+
+	width: 32px;
+	height: 32px;
+
+	border-radius: 5px;
+	border-color:orange;	
+	border-style: none;
+
+	box-shadow: 0px 5px rgb(223,112,0);
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Formulario POST con CSS</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+
+		<form action="form_post_server.php" method="POST" enctype="multipart/form-data">
+
+
+		  <div class="w3-container w3-half w3-margin-top">
+
+			<table class="w3-table w3-card-4 w3-border w3-mytable">
+				<tr>
+					<td colspan="2">
+						<header class="w3-container w3-light-grey w3-center w3-border-bottom" >
+  							<h1 class="w3-text-dark-grey w3-mytitlefont" >Create Account</h1>
+						</header>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td class="w3-mycolumn">
+						<label class="w3-myinputfont">First Name*:</label> <br>
+						<input type="text" name="name" class="w3-input w3-border w3-round" placeholder="enter your first name" required></input>
+						<br>
+					</td>
+
+					<td>	
+						<label class="w3-myinputfont">Last Name:</label><br>
+						<input type="text" name="surname" class="w3-input w3-border w3-round" placeholder="enter your last name"></input>
+						<br>
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<label class="w3-myinputfont">Email*:</label> <br>
+						<input type="email" name="email" class="w3-input w3-border w3-round" placeholder="enter your email" required></input>
+						<br>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="w3-myinputfont">Password*:</label> <br>
+						<input type="password" name="password" class="w3-input w3-border w3-round" placeholder="enter your password" required></input>
+					</td>
+					<td>
+						<label class="w3-myinputfont">Confirm Password*:</label> <br>
+						<input type="password" name="password2" class="w3-input w3-border w3-round" placeholder="enter your password again" required></input>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label class="w3-myinputfont">Gender:</label>
+						<br>
+						<input type="radio" id="male" name="gender" value="0">
+						<label for="male">Male</label>
+						<input type="radio" id="female" name="gender" value="1">
+						<label for="female">Female</label>
+						<br>
+					</td>	
+
+					<td>
+						<label class="w3-myinputfont">Hobbies:</label>
+						<br>
+						<input type="checkbox" id="hobbie1" name="hobbie1" value="music">
+						<label for="hobbie1">Music</label>
+						<input type="checkbox" id="hobbie2" name="hobbie2" value="sports">
+						<label for="hobbie2">Sports</label>
+						<input type="checkbox" id="hobbie3" name="hobbie3" value="travel">
+						<label for="hobbie3">Travel</label>
+						<input type="checkbox" id="hobbie4" name="hobbie4" value="movies">
+						<label for="hobbie4">Movies</label>
+						<br>
+					</td>
+				<tr>
+
+
+				<tr>
+					<td>
+						<label class="w3-myinputfont">Source of Income</label>
+						<br>
+						<select name="sourceIncome">
+							<option value="0">Employed</option>
+							<option value="1">Unemployed</option>
+						</select>
+					</td>
+
+					<td>
+						<label class="w3-myinputfont">Income</label>
+						<br>
+						<input type="range" id="income" name="income" value="20" min="0" max="200" step="10" class="w3-myslider" oninput="x.value=parseInt(income.value)">
+						<label class="w3-mystylecontainer w3-border w3-round" ><output name="x" for="income"></output> K</label>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label class="w3-myinputfont">Update Profile Picture:</label> <br>
+						 <input class="w3-input" type="file" name="file" accept=".jpg,.png">
+					</td>
+					<td>
+						<label class="w3-myinputfont">Age:</label> <br>
+						<input type="number" name="age"  class="w3-input w3-border w3-round" value="18">
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<label class="w3-myinputfont">Bio</label>
+						<br>
+						<textarea name="opinion" cols="82" rows="3" class="w3-input w3-border w3-round"></textarea>
+					</td>
+				</tr>
+
+				<tr>
+
+				<tr>
+					<td colspan="2">
+						<header class="w3-container w3-light-grey w3-center w3-border-top" ><br>
+  							<input type="submit" value="Create" class="w3-button w3-round w3-mystylecontainer" ></input>
+						</header>
+					</td>
+				</tr>
+
+
+			</table>
+		  </div>
+		</form>
+
+	</body>
+</html>
