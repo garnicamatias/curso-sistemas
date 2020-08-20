@@ -1,0 +1,9 @@
+Mati, excelente tu trabajo!
+Está impecable!!
+
+Sugerencia, para cuando este formulario lo decores con el framework w3.css en la próxima actividad, recordá que
+los style=".." de los elementos, no deben quedar allí en el HTML. Trasladá esas propiedades
+a clases CSS (un CSS propio) y agregá la vinculación en el <head>, en caso de ser necesario.
+
+Abrazo!!
+
