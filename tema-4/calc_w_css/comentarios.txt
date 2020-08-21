@@ -1,0 +1,24 @@
+Mati, tu trabajo está genial.
+Te felicito!!!
+
+Comentario:
+En la tabla utilizás cellspacing="10"
+Ese atributo y otros parecidos están deprecados en HTML5, eran válidos en HTML4.
+En algún momento no funcionarán más: https://developer.mozilla.org/es/docs/Web/HTML/Elemento/table
+
+El efecto de estos atributos se reemplazan con ajustes en CSS en HTML5.
+Una forma posible de reemplazo es esta:
+
+/* cellpadding */
+th, td { padding: 5px; }
+
+/* cellspacing */
+table { border-collapse: separate; border-spacing: 5px; } /* cellspacing="5" */
+table { border-collapse: collapse; border-spacing: 0; }   /* cellspacing="0" */
+
+/* valign */
+th, td { vertical-align: top; }
+
+/* align (center) */
+table { margin: 0 auto; }
+

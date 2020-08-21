@@ -1,0 +1,39 @@
+Hola Mati!!
+
+Tu código es correcto Mati!, resuelve el problema. ¡¡Muy bien!!
+
+Paso a dejarte algunas sugerencias:
+
+Siempre antes de dedicarte a pensar un algoritmo, te conviene revisar siempre si ya no existen funciones o métodos
+para el tipo de dato que ya resuelvan lo que necesitás. Y si no hay nada que lo resuelva, escribir tu código en función
+de los métodos que te sirvan. Más que nada para que no plantees soluciones con operaciones muy primitivas.
+
+Ojo, no tenés porqué saberlo a este punto, pero es para tenerlo en cuenta para próximos códigos!
+
+Ejemplos:
+
+//al hacer el array, algunas palabras quedan con la coma y el punto al final, por lo que a continuación elimino esos caracteres
+for (var i = 0 ; i < texto_en_array.length ; i++) {
+	
+	if (texto_en_array[i].substr(-1,1)==","  || texto_en_array[i].substr(-1,1)==".") {
+
+		texto_en_array[i]=texto_en_array[i].slice(0,-1);
+	}
+}
+
+Esta parte de código es correcta, funciona bien. El if y el cuerpo, puede ser reemplazable por esto:
+
+texto_en_array[i].replace(".","");
+texto_en_array[i].replace(",","")
+
+También es posible reemplazar ambos caracteres de una, suministrando un parámetro especial. (Expresiones regulares)
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/replace
+
+---
+
+texto_en_array[i].substring(0,1)
+
+Líneas como esas, pueden escribirse así también:   texto_en_array[i][0]; si tu intención es obtener solo el primer elemento del string.
+
+
+Saludos!!!
